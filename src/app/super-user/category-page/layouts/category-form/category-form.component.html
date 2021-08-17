@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ajouter une catégorie</h4>
+                <p class="card-description"> NB </p>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Catégorie parente </label>
+                        <select class="form-control" id="parent">
+                            <option>Cat 1</option>
+                            <option>Cat 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Descriptif</label>
+                        <textarea class="form-control" id="description" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Image /icône</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled
+                                placeholder="Image /icône">
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary"
+                                    type="button">Upload</button>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

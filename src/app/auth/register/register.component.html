@@ -1,0 +1,161 @@
+<div class="container-scroller" id="app">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+            <div class="content-wrapper d-flex align-items-center justify-content-center auth multi-step-login">
+                <div class="row w-100">
+                    <div class="col-md-5 mx-auto py-5">
+                        <h4 class="text-center">Créer votre compte</h4>
+                        <form class="step-form" id="msform">
+                            <!-- progressbar -->
+                            <ul class="step-progress" id="progressbar">
+                                <li class="active">Login Details</li>
+                                <li>Profile Utilisateur</li>
+                                <li>Documents</li>
+                                <li>Finish</li>
+                            </ul>
+                            <!-- Login Details -->
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="username" placeholder="Nom utilisateur" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="password" placeholder="mot de passe" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="password-confirmation"
+                                        placeholder="Confirmation" />
+                                </div>
+                                <button class="btn btn-primary next action-button float-right" type="button"
+                                    name="next" value="suivant" >Suivant</button>
+
+                            </fieldset>
+                            <!-- User Profile -->
+                            <fieldset>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="FirstName"
+                                            placeholder="Nom" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="last-name"
+                                            placeholder="Prénom" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="email" name="email" placeholder="Email" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="web-site" placeholder="Site web" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="country" placeholder="Ville" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="state" placeholder="Pays" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="postal-address" placeholder="Adresse postale" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="comp-address" placeholder="Complément d’adresse" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="zip" placeholder="Code postal" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" name="phone" placeholder="Téléphone" />
+                                </div>
+                                <button class="btn btn-primary next action-button float-right" type="button"
+                                    name="next" value="next">Suivant</button>
+                                <button class="btn btn-dark previous action-button float-left"
+                                    type="button" name="previous" value="previous">Précédent</button>
+                            </fieldset>
+                            <!-- Documents -->
+                            <fieldset>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="forme-juridique"
+                                            placeholder="Forme juridique" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="number-siret"
+                                            placeholder="Numéro SIRET (siège)" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="naf-ape" placeholder="Activité (Code NAF ou APE)" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="text" name="director" placeholder="Dirigeant de la société" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="file" name="img[]" class="file-upload-default">
+                                        <div class="input-group col-xs-12">
+                                            <input type="text" class="form-control file-upload-info" disabled
+                                                placeholder="Image /icône / Logo">
+                                            <span class="input-group-append">
+                                                <button class="file-upload-browse btn btn-success"
+                                                    type="button">Envoyer</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <!-- <label for="exampleTextarea1"></label> -->
+                                        <textarea class="form-control" id="exampleTextarea1" rows="6" placeholder="Description"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <!-- <label for="exampleTextarea1"></label> -->
+                                        <textarea class="form-control" id="exampleTextarea1" placeholder="Remarques" rows="6"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="number" name="review" placeholder="Avis clients note sur /5 " />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <input class="form-control" type="number" name="chiffre-affaire" placeholder="Chiffre d’affaires (total des factures)" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <label>Documents legal</label>
+                                        <input type="file" name="img[]" class="file-upload-default">
+                                        <div class="input-group col-xs-12">
+                                            <input type="text" class="form-control file-upload-info" disabled
+                                                placeholder="Documents legal">
+                                            <span class="input-group-append">
+                                                <button class="file-upload-browse btn btn-success"
+                                                    type="button">Envoyer</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary next action-button float-right" type="button"
+                                    name="next" value="next">Suivant</button>
+                                <button class="btn btn-dark previous action-button float-left"
+                                    type="button" name="previous" value="previous">Précedent</button>
+                            </fieldset>
+                            <fieldset class="text-center">
+                                <p class="font-weight-bold">Created sucessfully</p>
+                                <i class="mdi mdi-shield-check text-warning icon-lg"></i>
+                                <h4 class="font-weight-bold">Welcome purple</h4>
+                                <p class="mb-0 text-muted">You’ve successfully created a account for this user.</p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,179 @@
+<nav class="sidebar sidebar-offcanvas dynamic-active-class-disabled" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <a href="#" [routerLink]="['/dashboard']" class="nav-link">
+        <div class="nav-profile-image">
+          <img src="assets/images/faces/face1.jpg" alt="profile" />
+          <span class="login-status online"></span>
+          <!--change to offline or busy as needed-->
+        </div>
+        <div class="nav-profile-text d-flex flex-column">
+          <span class="font-weight-bold mb-2">David Grey. H</span>
+          <span class="text-secondary text-small">Project Manager</span>
+        </div>
+        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" [routerLink]="['/dashboard']">
+        <span class="menu-title">Tableau de bord</span>
+        <i class="mdi mdi-home menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#cats" aria-controls="cats">
+        <span class="menu-title">Gestion catégories</span>
+        <i class="menu-arrow"></i>
+        <i class="mdi mdi-note-plus menu-icon"></i>
+      </a>
+      <div class="collapse" id="cats">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/ajouter-catégorie']">Ajouter catégorie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-catégorie']">Liste catégorie</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#ser" aria-controls="ser">
+        <span class="menu-title">Gestion services</span>
+        <i class="menu-arrow"></i>
+        <i class="mdi mdi-note-text menu-icon"></i>
+      </a>
+      <div class="collapse" id="ser">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/ajouter-service']">Ajouter service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-services']">Liste services</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#pro" aria-controls="pro">
+        <span class="menu-title">Gestion professionels</span>
+        <i class="menu-arrow"></i>
+        <i class="mdi mdi-worker menu-icon"></i>
+      </a>
+      <div class="collapse" id="pro">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/ajouter-catégorie']">Ajouter professionel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-professionels']">Liste professionels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-professionels']">Liste en attente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/ajouter-catégorie']">Suppression définitive</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#cli" aria-controls="cli">
+        <span class="menu-title">Gestion clients</span>
+        <i class="menu-arrow"></i>
+        <i class="mdi mdi-account-network menu-icon"></i>
+      </a>
+      <div class="collapse" id="cli">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-professionels']">Ajouter client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-professionels']">Liste clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-professionels']">Suppression définitive</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#apps" aria-controls="apps">
+        <span class="menu-title">Gestion bon de réduction</span>
+        <!-- <i class="menu-arrow"></i> -->
+        <i class="mdi mdi-cart-arrow-down menu-icon"></i>
+      </a>
+      <!-- <div class="collapse" id="apps">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kanban Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Todo List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Email</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+        </ul>
+      </div> -->
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu-title">Gestion des factures</span>
+        <i class="mdi mdi-tooltip-text menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#util" aria-controls="util">
+        <span class="menu-title">Gestion utilisateur</span>
+        <i class="menu-arrow"></i>
+        <i class="mdi mdi-account-multiple-outline menu-icon"></i>
+      </a>
+      <div class="collapse" id="util">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/ajouter-utilisateur']">Ajouter utilisateur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/dashboard/liste-utilisateur']">Liste utilisateur</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu-title">Support</span>
+        <i class="mdi mdi-wechat menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu-title">Profile</span>
+        <i class="mdi mdi-account menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu-title">Blog</span>
+        <i class="mdi mdi-script menu-icon"></i>
+      </a>
+    </li>
+
+  </ul>
+</nav>

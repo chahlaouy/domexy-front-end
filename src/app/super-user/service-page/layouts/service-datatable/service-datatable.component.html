@@ -1,0 +1,45 @@
+<div class="page-header">
+    <h3 class="page-title"> Liste des services </h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Tableau de bord</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Liste des services</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Data table</h4>
+      <div class="row">
+        <div class="col-12">
+          <div class="table-responsive">
+              <table id="order-listing" class="table">
+                <thead>
+                  <tr>
+                    <th>ID #</th>
+                    <th>Nom</th>
+                    <th>Catégorie</th>
+                    <th>Descriptif</th>
+                    <th>Image /icône  </th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ser of services$ | async">
+                    <td> {{ ser.id }} </td>
+                    <td> {{ ser.name }} </td>
+                    <td> {{ ser.category }} </td>
+                    <td> {{ ser.description }} </td>
+                    <td> {{ ser.img }} </td>
+                    <td>
+                      <button class="btn btn-outline-primary">View</button>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>

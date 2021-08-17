@@ -1,0 +1,53 @@
+<div class="page-header">
+    <h3 class="page-title"> Liste des catégories </h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Tableau de bord</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Liste des catégories</li>
+      </ol>
+    </nav>
+  </div>
+  <category-modal></category-modal>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Data table</h4>
+      <div class="row">
+        <div class="col-12">
+          <div class="table-responsive">
+              <table id="order-listing" class="table">
+                <thead>
+                  <tr>
+                    <th>ID #</th>
+                    <th>Nom</th>
+                    <th>Catégorie parente</th>
+                    <th>Descriptif</th>
+                    <th>Image /icône  </th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let cat of categories$ | async">
+                    <td> {{cat.id}} </td>
+                    <td> {{cat.name}} </td>
+                    <td> {{cat.parent}} </td>
+                    <td> {{ cat.description }} </td>
+                    <td> {{ cat.img }} </td>
+                    <td>
+                      <div class="btn-group">
+                        <button type="button" class="btn py-2 btn-primary dropdown-toggle" data-toggle="dropdown">Action</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item py-2 mb-1" data-toggle="modal" data-target="#exampleModal-4"
+                          data-whatever="@mdo">Editer</a>
+                          <a class="dropdown-item py-2">Desactiver</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
